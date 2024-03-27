@@ -70,8 +70,8 @@ pet_name = "Rose"
     # f => Format(?)
 
 
-def say_hello(name = "Student"):
-    print(f"Hello, {name}!")
+# def say_hello(name = "Student"):
+#     print(f"Hello, {name}!")
     #print("Hello, world!")
 
 # JavaScript
@@ -82,9 +82,9 @@ def say_hello(name = "Student"):
     # unless we've supplied a default argument
 
 # Without argument, default value "Student" Kicks in
-say_hello()
+# say_hello()
 # with argument, we see expected output
-say_hello("Stella")
+# say_hello("Stella")
 
 # ipdb.set_trace()
 
@@ -92,7 +92,23 @@ say_hello("Stella")
 # 4. ✅ Create a function (pet_greeting) that will return a string with interpolated pet's name
     # Test invocation of "pet_greeting" in ipdb using "pet_greeting()"
     # pet_greeting("Rose") => "Rose says hello!"
-    # pet_greeting("Spot") => "Spot says hello!"
+    # pet_greeting("Spot") => "Spot says hello!"'
+
+# Global Scope
+name = "Bud"
+
+# Function Scope
+def pet_greeting():
+    print(f"{name} says hello!")
+
+# Invoke functions with /without passed args:
+# pet_greeting()
+# pet_greeting("Rose")
+# pet_greeting("Spot")
+    
+# variable defined in global scope:
+pet_greeting()
+
 
 # 5. ✅ Move conditional logic from Deliverable 1 into a function (pet_status) so that we may use it with different pets / moods
     # Test invocation of "pet_status" in ipdb using "pet_status(pet_name, pet_mood)"
