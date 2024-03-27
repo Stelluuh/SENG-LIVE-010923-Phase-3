@@ -8,15 +8,37 @@
 # 🚨 To enable ipdb debugging, first import "ipdb"
 import ipdb
 
+# Python => Snake case
+# JavaScript => camelCase
+pet_mood = "Boo"
+pet_name = "Rose"
+
+# Python => Cannot declare variables without assignment
+    # NameError: name 'pet_mood' is not defined
+# JavaScript => Can declare variables without assignment
+
+
+
 # 1. ✅ Create a condition to check a pet's mood
     # If "pet_mood" is "Hungry!", "Rose needs to be fed."
     # If "pet_mood" is "Rowdy!", "Rose needs a walk."
     # In all other cases, "Rose is all good."
 
+# Javascript => === Compare data types
+# Python => == to compare data types
+
+# We can use "Set trace" to override previously set values/ and to test different outcomes.
+ipdb.set_trace()
+
+if pet_mood == "Hungry!":
+    print("Rose needs to be fed.")
+elif pet_mood == "Rowdy!":
+    print("Rose needs a walk.")
+else:
+    print("Rose is all good.")
+
     # Note => Feel free to set your own values for "pet_mood" to view various outputs.
 
-pet_mood = "Hungry!"
-pet_name = "Rose"
 
 # 2. ✅ Create a ternary operator using "pet_mood" as a condition:
     # If pet_food is "Hungry!" => "Rose needs to be fed."
