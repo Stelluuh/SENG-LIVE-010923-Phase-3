@@ -86,7 +86,9 @@ say_hello()
 # with argument, we see expected output
 say_hello("Stella")
 
-ipdb.set_trace()
+# ipdb.set_trace()
+
+
 # 4. ✅ Create a function (pet_greeting) that will return a string with interpolated pet's name
     # Test invocation of "pet_greeting" in ipdb using "pet_greeting()"
     # pet_greeting("Rose") => "Rose says hello!"
