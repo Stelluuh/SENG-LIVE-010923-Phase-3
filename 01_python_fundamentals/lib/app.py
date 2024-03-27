@@ -56,6 +56,37 @@ pet_name = "Rose"
     # Test invocation of "say_hello" in ipdb using "say_hello()"
     # say_hello() => "Hello, world!"
 
+# JavaScript =>  function
+# Pythong => def
+
+# String Interpolation
+
+    # JavaScript
+        # `My name is ${name}`
+
+    # Python
+        # f"My name is {name}
+
+    # f => Format(?)
+
+
+def say_hello(name = "Student"):
+    print(f"Hello, {name}!")
+    #print("Hello, world!")
+
+# JavaScript
+    # Can Invoke Function containing params without args
+
+#Python
+    # Cannot invoke functions containing params without Args '
+    # unless we've supplied a default argument
+
+# Without argument, default value "Student" Kicks in
+say_hello()
+# with argument, we see expected output
+say_hello("Stella")
+
+ipdb.set_trace()
 # 4. ✅ Create a function (pet_greeting) that will return a string with interpolated pet's name
     # Test invocation of "pet_greeting" in ipdb using "pet_greeting()"
     # pet_greeting("Rose") => "Rose says hello!"
