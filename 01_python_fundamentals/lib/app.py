@@ -10,7 +10,7 @@ import ipdb
 
 # Python => Snake case
 # JavaScript => camelCase
-pet_mood = "Boo"
+pet_mood = "Hungry!"
 pet_name = "Rose"
 
 # Python => Cannot declare variables without assignment
@@ -28,14 +28,14 @@ pet_name = "Rose"
 # Python => == to compare data types
 
 # We can use "Set trace" to override previously set values/ and to test different outcomes.
-ipdb.set_trace()
+# ipdb.set_trace()
 
-if pet_mood == "Hungry!":
-    print("Rose needs to be fed.")
-elif pet_mood == "Rowdy!":
-    print("Rose needs a walk.")
-else:
-    print("Rose is all good.")
+# if pet_mood == "Hungry!":
+#     print("Rose needs to be fed.")
+# elif pet_mood == "Rowdy!":
+#     print("Rose needs a walk.")
+# else:
+#     print("Rose is all good.")
 
     # Note => Feel free to set your own values for "pet_mood" to view various outputs.
 
@@ -43,6 +43,14 @@ else:
 # 2. ✅ Create a ternary operator using "pet_mood" as a condition:
     # If pet_food is "Hungry!" => "Rose needs to be fed."
     # In all other cases => "Rose is all good."
+
+# JavaScript 
+    # condition ? if true : if false
+# Python
+    # If True if Condition else Default Value
+
+# print("Rose needs to be fed.") if pet_mood == "Hungry!" else print("Rose is all good.")
+
 
 # 3. ✅ Create a function (say_hello) that returns the string "Hello, world!"
     # Test invocation of "say_hello" in ipdb using "say_hello()"
