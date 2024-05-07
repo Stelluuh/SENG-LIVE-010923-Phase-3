@@ -120,17 +120,17 @@ pet_name = "Rose"
     
     # Take a moment to note that "pet_name" and "pet_mood" parameters are within Local Scope and take priority over "pet_name" and "pet_mood" in Global Scope.
 
-def pet_status(pet_name, pet_mood):
-    if pet_mood == "Hungry!":
-        print(f"{pet_name} needs to be fed.")
-    elif pet_mood == "Rowdy!":
-        print(f"{pet_name} needs a walk.")
-    else:
-        print(f"{pet_name} is all good")
+# def pet_status(pet_name, pet_mood):
+#     if pet_mood == "Hungry!":
+#         print(f"{pet_name} needs to be fed.")
+#     elif pet_mood == "Rowdy!":
+#         print(f"{pet_name} needs a walk.")
+#     else:
+#         print(f"{pet_name} is all good")
 
-pet_status("Rose", "Hungry!")
-pet_status("Spot", "Rowdy!")
-pet_status("Bud", "Relaxed!")
+# pet_status("Rose", "Hungry!")
+# pet_status("Spot", "Rowdy!")
+# pet_status("Bud", "Relaxed!")
 
 
 # 6. ✅ Create a function (pet_birthday) that will increment a pet's age up by 1. Use try / except to handle errors. 
@@ -143,4 +143,19 @@ pet_status("Bud", "Relaxed!")
 # 🚨 To create an ipdb breakpoint, comment / uncomment line below:
 # ipdb.set_trace()
 
+def pet_birthday(age):
 
+    ipdb.set_trace()
+
+    try:
+        # age = age + 1
+        # print(f"Happy Birthday! Your pet is now {age}")
+        print(f"Happy Birthday! Your pet is now {age + 1}")
+    except TypeError:
+        print("Type Error Occured!")
+    except NameError:
+        print("Name Error Occured!")
+
+# pet_birthday(10)
+pet_birthday("10")
+    # without try and except, we get TypeError: can only concatenate str (not "int") to str
