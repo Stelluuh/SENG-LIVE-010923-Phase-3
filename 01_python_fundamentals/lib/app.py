@@ -145,17 +145,26 @@ pet_name = "Rose"
 
 def pet_birthday(age):
 
-    ipdb.set_trace()
+    # ipdb.set_trace() #use this to pause our values. 
+        # 150     try:
+        # 151         # age = age + 1
 
-    try:
+        # ipdb> age = 10
+        # ipdb> c
+        # Happy Birthday! Your pet is now 11
+
+    #Attemp to Execute Code
+    try: 
         # age = age + 1
         # print(f"Happy Birthday! Your pet is now {age}")
         print(f"Happy Birthday! Your pet is now {age + 1}")
+
+    #If An Error of a Particular Type Occrus, Execute some other bit of code.
     except TypeError:
         print("Type Error Occured!")
     except NameError:
         print("Name Error Occured!")
 
-# pet_birthday(10)
-pet_birthday("10")
+pet_birthday(10)
+# pet_birthday("10")
     # without try and except, we get TypeError: can only concatenate str (not "int") to str
