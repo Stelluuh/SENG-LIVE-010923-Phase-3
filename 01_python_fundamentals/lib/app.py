@@ -95,11 +95,13 @@ pet_name = "Rose"
     # pet_greeting("Spot") => "Spot says hello!"'
 
 # Global Scope
-name = "Bud"
+# name = "Bud"
 
 # Function Scope
-def pet_greeting():
-    print(f"{name} says hello!")
+# def pet_greeting():
+#     global name #this overides the global variable on line 97
+#     name = "Spot" #now we can overide the name value.
+#     print(f"{name} says hello!")
 
 # Invoke functions with /without passed args:
 # pet_greeting()
@@ -107,7 +109,7 @@ def pet_greeting():
 # pet_greeting("Spot")
     
 # variable defined in global scope:
-pet_greeting()
+# pet_greeting()
 
 
 # 5. ✅ Move conditional logic from Deliverable 1 into a function (pet_status) so that we may use it with different pets / moods
@@ -116,8 +118,20 @@ pet_greeting()
     # pet_greeting("Spot", "Rowdy!") => "Spot needs a walk."
     # pet_greeting("Bud", "Relaxed") => "Bud is all good."
     
-    # Take a moment to note that "pet_name" and "pet_mood" parameters are within Local Scope and take priority over "pet_name" and "pet_mood"
-    # in Global Scope.
+    # Take a moment to note that "pet_name" and "pet_mood" parameters are within Local Scope and take priority over "pet_name" and "pet_mood" in Global Scope.
+
+def pet_status(pet_name, pet_mood):
+    if pet_mood == "Hungry!":
+        print(f"{pet_name} needs to be fed.")
+    elif pet_mood == "Rowdy!":
+        print(f"{pet_name} needs a walk.")
+    else:
+        print(f"{pet_name} is all good")
+
+pet_status("Rose", "Hungry!")
+pet_status("Spot", "Rowdy!")
+pet_status("Bud", "Relaxed!")
+
 
 # 6. ✅ Create a function (pet_birthday) that will increment a pet's age up by 1. Use try / except to handle errors. 
     # If our function is given an incorrect datatype, it should handle the TypeError exception and alert the user
